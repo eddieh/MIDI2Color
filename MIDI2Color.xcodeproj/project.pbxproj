@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C003F9E1AB9C9ED00B36681 /* MIDI2ColorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C003F9D1AB9C9ED00B36681 /* MIDI2ColorPlugIn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C003F971AB9C9ED00B36681 /* MIDI2Color.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDI2Color.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C003F9B1AB9C9ED00B36681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C003F9C1AB9C9ED00B36681 /* MIDI2ColorPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDI2ColorPlugIn.h; sourceTree = "<group>"; };
+		2C003F9D1AB9C9ED00B36681 /* MIDI2ColorPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIDI2ColorPlugIn.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C003F931AB9C9ED00B36681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C003F8D1AB9C9ED00B36681 = {
+			isa = PBXGroup;
+			children = (
+				2C003F991AB9C9ED00B36681 /* MIDI2Color */,
+				2C003F981AB9C9ED00B36681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C003F981AB9C9ED00B36681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C003F971AB9C9ED00B36681 /* MIDI2Color.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C003F991AB9C9ED00B36681 /* MIDI2Color */ = {
+			isa = PBXGroup;
+			children = (
+				2C003F9C1AB9C9ED00B36681 /* MIDI2ColorPlugIn.h */,
+				2C003F9D1AB9C9ED00B36681 /* MIDI2ColorPlugIn.m */,
+				2C003F9A1AB9C9ED00B36681 /* Supporting Files */,
+			);
+			path = MIDI2Color;
+			sourceTree = "<group>";
+		};
+		2C003F9A1AB9C9ED00B36681 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C003F9B1AB9C9ED00B36681 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C003F961AB9C9ED00B36681 /* MIDI2Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C003FA11AB9C9ED00B36681 /* Build configuration list for PBXNativeTarget "MIDI2Color" */;
+			buildPhases = (
+				2C003F921AB9C9ED00B36681 /* Sources */,
+				2C003F931AB9C9ED00B36681 /* Frameworks */,
+				2C003F941AB9C9ED00B36681 /* Resources */,
+				2C003F951AB9C9ED00B36681 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDI2Color;
+			productName = MIDI2Color;
+			productReference = 2C003F971AB9C9ED00B36681 /* MIDI2Color.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C003F8E1AB9C9ED00B36681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Eddie Hillenbrand";
+				TargetAttributes = {
+					2C003F961AB9C9ED00B36681 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2C003F911AB9C9ED00B36681 /* Build configuration list for PBXProject "MIDI2Color" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C003F8D1AB9C9ED00B36681;
+			productRefGroup = 2C003F981AB9C9ED00B36681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C003F961AB9C9ED00B36681 /* MIDI2Color */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C003F941AB9C9ED00B36681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C003F951AB9C9ED00B36681 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/MIDI2Color.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/MIDI2Color.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C003F921AB9C9ED00B36681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C003F9E1AB9C9ED00B36681 /* MIDI2ColorPlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2C003F9F1AB9C9ED00B36681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C003FA01AB9C9ED00B36681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C003FA21AB9C9ED00B36681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MIDI2Color/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		2C003FA31AB9C9ED00B36681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MIDI2Color/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C003F911AB9C9ED00B36681 /* Build configuration list for PBXProject "MIDI2Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C003F9F1AB9C9ED00B36681 /* Debug */,
+				2C003FA01AB9C9ED00B36681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C003FA11AB9C9ED00B36681 /* Build configuration list for PBXNativeTarget "MIDI2Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C003FA21AB9C9ED00B36681 /* Debug */,
+				2C003FA31AB9C9ED00B36681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C003F8E1AB9C9ED00B36681 /* Project object */;
+}
