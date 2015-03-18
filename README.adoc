@@ -1,0 +1,8 @@
+= MIDI2Color a Quartz Composer Plugin
+
+
+This is the MIDI2Color Plugin from the "Quartz Composer Custom Patch
+Programming Guide" document.
+
+This patch maps MIDI notes to colors values. The octave is mapped to a
+color and the pitch determines the alpha value of the color.
